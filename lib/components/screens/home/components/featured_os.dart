@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:tvanet/components/screens/details/details_screen.dart';
 import 'package:tvanet/constants.dart';
+import 'body.dart';
 
-class RecomendOs extends StatelessWidget {
-  const RecomendOs({
-    Key? key,
+class FeaturedOs extends StatelessWidget {
+  const FeaturedOs({
+    Key? key
   }) : super(key: key);
 
   @override
@@ -13,65 +13,37 @@ class RecomendOs extends StatelessWidget {
       scrollDirection: Axis.horizontal,
       child: Row(
         children: [
-            RecomendOsCard(
-              image: "assets/images/manuntencao.jpeg",
-              typeOs: 'Manutenção',
+            FeaturedOsCard(
+              image: "assets/images/service.jpeg",
+              typeOs: 'Contrato: 25652',
               dateOs: '15/12/2021',
               valueOs: 'Rua Monsenhor Felix \nNº 142, Casa 40',
               status:"assets/images/bolaVerde.png",
-              press: (){
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder : (context)=> DetailsScreen(),
-                  )
-                );
-              },
+              press: (){},
             ),
-             RecomendOsCard(
-              image: "assets/images/manuntencao.jpeg",
-              typeOs: 'Troca de Pacote',
+             FeaturedOsCard(
+              image: "assets/images/service.jpeg",
+              typeOs: 'Contrato: 25652',
               dateOs: '01/01/2022',
               valueOs: 'Rua Vaz Lobo \nNº 120, Casa 1',
               status:"assets/images/bolaVerde.png",
-              press: (){
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder : (context)=> DetailsScreen(),
-                  )
-                );
-              },
+              press: (){},
             ),
-            RecomendOsCard(
-              image: "assets/images/manuntencao.jpeg",
-              typeOs: 'Substituição de Equip.',
+            FeaturedOsCard(
+              image: "assets/images/service.jpeg",
+              typeOs: 'Contrato: 25652',
               dateOs: '05/02/2022',
               valueOs: 'Rua Vicente de Carvalho \nNº 42, Casa 25',
               status:"assets/images/bolaVerde.png",
-              press: (){
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder : (context)=> DetailsScreen(),
-                  )
-                );
-              },
+              press: (){},
             ),
-            RecomendOsCard(
-              image: "assets/images/manuntencao.jpeg",
-              typeOs: 'Manutenção',
+            FeaturedOsCard(
+              image: "assets/images/service.jpeg",
+              typeOs: 'Contrato: 25652',
               dateOs: '15/02/2022',
               valueOs: 'Rua Lima Drumond  \nNº 40, Casa 4',
               status:"assets/images/bolaVerde.png",
-              press: (){
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder : (context)=> DetailsScreen(),
-                  )
-                );
-              },
+              press: (){},
             ),
         ],
       ),
@@ -79,8 +51,8 @@ class RecomendOs extends StatelessWidget {
   }
 }
 
-class RecomendOsCard extends StatelessWidget {
-  const RecomendOsCard({
+class FeaturedOsCard extends StatelessWidget {
+  const FeaturedOsCard({
     Key? key, required this.image,required this.typeOs,required this.dateOs,required this.status,required this.press, required this.valueOs,
   }) : super(key: key);
 
